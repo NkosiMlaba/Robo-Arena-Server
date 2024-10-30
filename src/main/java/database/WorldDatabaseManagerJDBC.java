@@ -18,7 +18,7 @@ import java.io.File;
  */
 public class WorldDatabaseManagerJDBC {
     private String URL;
-    private static final String DATABASE_DIR = "database"; // Directory name
+    private static final String DATABASE_DIR = "src/main/resources/database";
 
     
     /**
