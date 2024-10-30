@@ -1,7 +1,5 @@
 FROM maven:latest
 
-
-
 WORKDIR /app
 
 COPY target/Robo-Arena-1.0-SNAPSHOT-webapi-jar-with-dependencies.jar /app/robo-arena-webapi.jar

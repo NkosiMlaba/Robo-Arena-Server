@@ -1,14 +1,4 @@
-# Default ignored files
 /target/
 target/
 target
-Notes.md
-git
-test_worlds.db
-test_worlds_1.db
-test_worlds_2.db
-test_worlds_3.db
-test_worlds_4.db
-test_worlds_**
-README_2.md
 .vscode
