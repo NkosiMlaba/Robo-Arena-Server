@@ -10,7 +10,6 @@ import java.util.ArrayList;
 
 import domain.world.Obstacle;
 import domain.world.World;
-import kotlin.Deprecated;
 
 import java.io.File;
 

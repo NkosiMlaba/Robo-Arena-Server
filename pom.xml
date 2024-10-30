@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>RobotWorld</artifactId>
+    <artifactId>Robo-Arena</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
