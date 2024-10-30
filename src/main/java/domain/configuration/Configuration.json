@@ -1,0 +1,16 @@
+{
+  "server": {
+    "port": 5000,
+    "host": "localhost"
+  },
+  "world": {
+    "x_constraint": 200,
+    "y_constraint": 200,
+    "visibility": 70,
+    "reload": 6,
+    "repair": 6,
+    "max_sheilds": 10,
+    "tileSize": 16,
+    "maxRobots": 4
+  }
+}
