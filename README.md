@@ -1,7 +1,7 @@
 # Robo-Arena-Server
 
 ## Project description:
-This project is a server for the game Robo-Arena application. It is responsible for managing the game state, handling player input, and communicating with the client.
+This project is a server for the Robo-Arena application. It is responsible for managing the game state, handling player input, and communicating with the client.
 
 ## System requirements:
 - Java
@@ -33,18 +33,6 @@ This project is a server for the game Robo-Arena application. It is responsible 
         make run-webapi
             
 
-<br>
-
-## Test running instructions:
-##### Run unittests tests only:
-1. Run the tests with the following command:
-        
-        make tests
-
-##### Run all acceptance tests:
-1. Run the tests with the following command:
-        
-        make acceptance
 
 
 
