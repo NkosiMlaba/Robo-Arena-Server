@@ -33,7 +33,22 @@ This project is a server for the Robo-Arena application. It is responsible for m
         make run-webapi
             
 
+## Docker running instructions:
+##### Checking availaable images:
+    docker images
 
+##### Building the docker image:
+    docker build -t robo-arena-server-image .
 
+##### Running the docker image:
+    docker run -p 7000:7000 robo-arena-server-image
 
+##### Pulling the docker image:
+    docker pull nkosimlaba/robo-arena-server:latest
+
+##### Running the docker image:
+    docker run -p 7000:7000 -rm -t nkosimlaba/robo-arena-server:latest
+
+##### Pushing the docker image:
+    docker push nkosimlaba/robo-arena-server:latest
 
