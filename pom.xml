@@ -157,7 +157,7 @@
                         <configuration>
                             <archive>
                                 <manifest>
-                                    <mainClass>main.Class</mainClass> <!-- Adjust this to your main class -->
+                                    <mainClass>main.Class</mainClass>
                                 </manifest>
                             </archive>
                         </configuration>
@@ -171,45 +171,7 @@
                 <artifactId>maven-assembly-plugin</artifactId>
                 <version>3.3.0</version>
                 <executions>
-                    <execution>
-                        <id>make-client-jar</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>single</goal>
-                        </goals>
-                        <configuration>
-                            <descriptorRefs>
-                                <descriptorRef>jar-with-dependencies</descriptorRef>
-                            </descriptorRefs>
-                            <finalName>${project.artifactId}-${project.version}-client</finalName>
-                            <archive>
-                                <manifest>
-                                    <mainClass>client.Client</mainClass> <!-- Adjust this to your client main class -->
-                                </manifest>
-                            </archive>
-                            <classifier>client</classifier>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>make-server-jar</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>single</goal>
-                        </goals>
-                        <configuration>
-                            <descriptorRefs>
-                                <descriptorRef>jar-with-dependencies</descriptorRef>
-                            </descriptorRefs>
-                            <finalName>${project.artifactId}-${project.version}-server</finalName>
-                            <archive>
-                                <manifest>
-                                    <mainClass>server.Server</mainClass> <!-- Adjust this to your server main class -->
-                                </manifest>
-                            </archive>
-                            <classifier>server</classifier>
-                        </configuration>
-                    </execution>
-
+                    
                     <execution>
                         <id>make-webapi-jar</id>
                         <phase>package</phase>
@@ -223,7 +185,7 @@
                             <finalName>${project.artifactId}-${project.version}-webapi</finalName>
                             <archive>
                                 <manifest>
-                                    <mainClass>webapi.WebApiServer</mainClass> <!-- Adjust this to your server main class -->
+                                    <mainClass>webapi.WebApiServer</mainClass>
                                 </manifest>
                             </archive>
                             <classifier>webapi</classifier>

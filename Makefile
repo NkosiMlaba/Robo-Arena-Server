@@ -1,7 +1,5 @@
 # Variables
 VERSION := $(shell mvn help:evaluate -Dexpression=project.version -q -DforceStdout)
-SERVER_JAR_FILE = target/Robo-Arena-1.0-SNAPSHOT-server-jar-with-dependencies.jar
-CLIENT_JAR_FILE = target/Robo-Arena-1.0-SNAPSHOT-client-jar-with-dependencies.jar
 WEBAPI_JAR_FILE = target/Robo-Arena-1.0-SNAPSHOT-webapi-jar-with-dependencies.jar
 PID_FILE=/tmp/server.pid
 PORT = 5050
