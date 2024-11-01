@@ -3,6 +3,11 @@
 ## Project description:
 This project is a server for the Robo-Arena application. It is responsible for managing the game state, handling player input, and communicating with the client.
 
+## View the server live [here](https://robo-arena-server.azurewebsites.net/):
+
+## Output
+![Demo](program-output/1.png)
+
 ## System requirements:
 - Java
 - Maven
