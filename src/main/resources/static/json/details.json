@@ -3,7 +3,7 @@
     "description": "Contains endpoints to the robot arena application. Use the robot-arena-client to fully utilise the services",
     "features": [
         "launch a robot",
-        "movements of the robot",
+        "look around command",
         "world details"
     ]
 }
