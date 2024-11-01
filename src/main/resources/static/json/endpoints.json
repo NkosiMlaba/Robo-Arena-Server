@@ -1,0 +1,22 @@
+[
+    {
+        "method": "GET",
+        "path": "/world",
+        "description": "Returns the current state of the world."
+    },
+    {
+        "method": "GET",
+        "path": "/world/{data}",
+        "description": "Fetches specific world data based on the provided parameter."
+    },
+    {
+        "method": "POST",
+        "path": "/robot/launch",
+        "description": "Launches a robot with the specified command data."
+    },
+    {
+        "method": "POST",
+        "path": "/robot/look",
+        "description": "Looks for a robot based on the provided command data."
+    }
+]
