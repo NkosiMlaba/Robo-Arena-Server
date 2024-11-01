@@ -3,9 +3,10 @@ package webapi;
 import org.apache.log4j.chainsaw.Main;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import io.javalin.http.staticfiles.Location;
+import io.javalin.Javalin;
 
 import domain.ClientController;
-import io.javalin.Javalin;
 
 public class WebApiServer {
     private static final Logger logger = LoggerFactory.getLogger(Main.class);
