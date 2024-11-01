@@ -13,6 +13,7 @@ This project is a server for the Robo-Arena application. It is responsible for m
 - Maven
 - Make
 - Docker
+- SQLite
 
 <br>
 
