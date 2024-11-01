@@ -27,18 +27,6 @@ test:
 test-acceptance:
 	mvn clean verify
 
-.PHONY: client
-client: build
-	java -jar $(CLIENT_JAR_FILE) localhost 5050
-
-.PHONY: server
-server: build
-	java -jar $(SERVER_JAR_FILE) -p 5050 -s 10 -o 4,4
-
-.PHONY: back-server
-back-server:
-	java -jar $(SERVER_JAR_FILE) & echo $$! > $(PID_FILE)
-
 .PHONY: stop-server
 stop-server:
 	
@@ -69,10 +57,6 @@ stop: stop-server
 acceptance:
 	mvn clean verify
 
-.PHONY: acceptance-ourserver
-acceptance-ourserver:
-	mvn clean verify -Dserver.jar.path=$(SERVER_JAR_FILE)
-
 .PHONY: webapi
 webapi: build
 	java -jar $(WEBAPI_JAR_FILE)
@@ -80,14 +64,6 @@ webapi: build
 .PHONY: run-webapi
 run-webapi: 
 	java -jar $(WEBAPI_JAR_FILE)
-
-.PHONY: run-server
-run-server: 
-	java -jar $(SERVER_JAR_FILE) -p 5050
-
-.PHONY: run-client
-run-client: 
-	java -jar $(CLIENT_JAR_FILE)
 
 .PHONY: push
 push:
