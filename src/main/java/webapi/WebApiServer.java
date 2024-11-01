@@ -21,7 +21,7 @@ public class WebApiServer {
         });
 
         app.get("/", ctx -> {
-            ctx.json(new Greeting("Hello from Javalin Server with CORS!"));
+            ctx.redirect("/html/index.html");
         });
 
         
@@ -76,19 +76,16 @@ public class WebApiServer {
 
     static public Javalin startServer (String[] args) {
         Javalin app;
-        try {
-            app = Javalin.create(config -> {
-            
+        
+        app = Javalin.create(config -> {
+        
             config.staticFiles.add(staticFileConfig -> {
                 staticFileConfig.directory = "src/main/resources/static";
                 staticFileConfig.location = Location.EXTERNAL;
             });
-            
-            });
-        } catch (Exception e) {
-            app = Javalin.create(config -> {
-            }).start(7000);
-        }
-        return app.start(Integer.parseInt(args[0]));
+        
+        });
+        
+        return app.start(7000);
     }
 }
