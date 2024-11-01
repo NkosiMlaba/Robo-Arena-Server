@@ -171,7 +171,6 @@
                 <artifactId>maven-assembly-plugin</artifactId>
                 <version>3.3.0</version>
                 <executions>
-                    
                     <execution>
                         <id>make-webapi-jar</id>
                         <phase>package</phase>
@@ -189,6 +188,7 @@
                                 </manifest>
                             </archive>
                             <classifier>webapi</classifier>
+                            <outputDirectory>${project.basedir}/libs</outputDirectory>
                         </configuration>
                     </execution>
                 </executions>
