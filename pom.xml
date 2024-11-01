@@ -157,7 +157,7 @@
                         <configuration>
                             <archive>
                                 <manifest>
-                                    <mainClass>main.Class</mainClass> <!-- Adjust this to your main class -->
+                                    <mainClass>main.Class</mainClass>
                                 </manifest>
                             </archive>
                         </configuration>
