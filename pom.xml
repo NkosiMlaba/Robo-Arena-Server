@@ -189,6 +189,7 @@
                             </archive>
                             <classifier>webapi</classifier>
                             <outputDirectory>${project.basedir}/libs</outputDirectory>
+                            <outputDirectory>${project.basedir}/target</outputDirectory>
                         </configuration>
                     </execution>
                 </executions>
