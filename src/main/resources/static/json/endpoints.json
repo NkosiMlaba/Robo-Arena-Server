@@ -7,7 +7,7 @@
     {
         "method": "GET",
         "path": "/world/{data}",
-        "description": "Fetches specific world data based on the name"
+        "description": "Fetches specific world data based on the name."
     },
     {
         "method": "POST",
