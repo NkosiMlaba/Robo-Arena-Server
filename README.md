@@ -49,11 +49,11 @@ This project is a server for the Robo-Arena application. It is responsible for m
 ##### Running the docker image:
     docker run -p 7000:7000 robo-arena-server-image
 
-##### Pulling the docker image:
-    docker pull nkosimlaba/robo-arena-server:latest
-
 ##### Running the docker image:
     docker run -p 7000:7000 -rm -t nkosimlaba/robo-arena-server:latest
+
+##### Pulling the docker image:
+    docker pull nkosimlaba/robo-arena-server:latest
 
 ##### Pushing the docker image:
     docker push nkosimlaba/robo-arena-server:latest
